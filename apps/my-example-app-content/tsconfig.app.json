@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "../../out-tsc/app",
     "types": [],
-    "module": "esNext"
+    "module": "ES2020"
   },
   "include": [
     "src/**/*.ts"

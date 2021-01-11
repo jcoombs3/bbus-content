@@ -8,5 +8,14 @@
       {"@angular/platform-browser/animations": ["BrowserAnimationsModule"]},
       {"@angular/common/http": ["HttpClientModule"]}
     ]
-  }
+  ,    "no-implicit-dependencies": {
+      "severity": "warning",
+      "options": true
+    }
+},
+    "linterOptions": {
+      "exclude": [
+        "test.ts"
+      ]
+    }
 }

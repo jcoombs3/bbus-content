@@ -3,10 +3,14 @@
   "compilerOptions": {
     "sourceMap": true,
     "declaration": false,
+    "downlevelIteration": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true,
     "target": "es5",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -26,5 +30,8 @@
   "exclude": [
     "node_modules",
     "tmp"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "strictTemplates": true
+  }
 }
