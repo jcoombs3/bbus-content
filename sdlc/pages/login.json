@@ -1,0 +1,12 @@
+{
+	"extends": "container-bb-manageable-area",
+	"children": [
+		{
+			"name": "bnp-bnp-retail-app-dev-ang-_-login",
+			"extends": "bnp-bnp-retail-app-dev-ang",
+			"AppConfig.googleAPIKey": "",
+			"area": "0",
+			"children": []
+    }
+  ]
+}

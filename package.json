@@ -15,7 +15,9 @@
     "prestart": "bb-ang copy-assets",
     "start": "ng serve",
     "test": "ng test",
-    "update": "ng update @bb-cli/schematics@^4 @backbase/foundation-ang@^6"
+    "update": "ng update @bb-cli/schematics@^4 @backbase/foundation-ang@^6",
+    "precreate-experience": "mkdir -p ./dist/experiences/remote",
+    "create-experience": "npx sdlc package sdlc/experience.json"
   },
   "private": true,
   "dependencies": {
