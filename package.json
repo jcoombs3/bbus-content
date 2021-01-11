@@ -30,7 +30,7 @@
     "@angular/platform-browser-dynamic": "8.0.0",
     "@angular/router": "8.0.0",
     "@backbase/backbase-theme": "latest",
-    "@backbase/foundation-ang": "5.3.0",
+    "@backbase/foundation-ang": "5.3.2",
     "@ngrx/effects": "8.1.0",
     "@ngrx/store": "8.1.0",
     "core-js": "~2.6.5",
