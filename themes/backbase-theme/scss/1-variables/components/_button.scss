@@ -1,0 +1,81 @@
+/// Configures the horizontal button padding
+// $button-padding-horizontal:
+
+/// Configures the vertical button padding
+// $button-padding-vertical:
+
+/// Configures the button font size
+// $button-font-size:
+
+/// Configures the button font weight
+// $button-font-weight:
+
+/// Configures the button:disabled opacity
+// $button-disabled-opacity:
+
+/// Configures the button border width
+// $button-border-width:
+
+/// Configures the button border radius
+// $button-border-radius:
+
+/// Configures the button shadow offset-x
+/// Used to compose $button-box-shadow
+// $button-box-shadow-offset-x:
+
+/// Configures the button shadow offset-y
+/// Used to compose $button-box-shadow
+// $button-box-shadow-offset-y:
+
+/// Configures the button shadow blur-radius
+/// Used to compose $button-box-shadow
+// $button-box-shadow-blur-radius:
+
+/// Configures the button shadow spread-radius
+/// Used to compose $button-box-shadow
+// $button-box-shadow-spread-radius:
+
+/// Configures the button shadow color
+/// Used to compose $button-box-shadow
+// $button-box-shadow-color:
+
+///  Configures the button:active shadow offset-x
+///  Used to compose $button-box-shadow
+// $button-active-box-shadow-offset-x:
+
+///  Configures the button:active shadow offset-y
+///  Used to compose $button-box-shadow
+// $button-active-box-shadow-offset-y:
+
+///  Configures the button:active shadow blur-radius
+///  Used to compose $button-box-shadow
+// $button-active-box-shadow-blur-radius:
+
+///  Configures the button:active shadow spread-radius
+///  Used to compose $button-box-shadow
+// $button-active-box-shadow-spread-radius:
+
+///  Configures the button:active shadow color
+///  Used to compose $button-box-shadow
+// $button-active-box-shadow-color:
+
+/// Configures the button color-transition (experimental)
+/// Used to configure the default $button-transition
+// $button-color-transition:
+
+/// Configures the button background-color-transition (experimental)
+/// Used to configure the default $button-transition
+// $button-background-color-transition:
+
+/// Configures the button border-color-transition (experimental)
+/// Used to configure the default  $button-transition
+// $button-border-color-transition:
+
+/// Configures the button shadow-transition (experimental)
+/// Used to configure the default $button-transition
+// $button-box-shadow-transition:
+
+/// Configures all transitions used for button transitions (experimental)
+/// Defaults to transitions with $button-color-transition, $button-background-color-transition, $button-border-color-transition and $button-box-shadow-transition
+// $button-transition:
+
