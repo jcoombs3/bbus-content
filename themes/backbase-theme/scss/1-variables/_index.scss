@@ -1,0 +1,8 @@
+@import "util/index";
+@import "brand/index";
+@import "brand-extended/index";
+@import "state/index";
+@import "components/index";
+@import "widgets/index";
+// Import variables from default theme
+@import "~@backbase/backbase-theme/scss/1-variables/variables";
