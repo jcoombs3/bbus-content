@@ -20,6 +20,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.1.0",
+    "@angular/cdk": "^10.2.7",
     "@angular/common": "~10.1.0",
     "@angular/compiler": "~10.1.0",
     "@angular/core": "~10.1.0",
@@ -30,6 +31,10 @@
     "@angular/router": "~10.1.0",
     "@backbase/backbase-theme": "latest",
     "@backbase/foundation-ang": "6.7.6",
+    "@backbase/ui-ang": "^5.21.7",
+    "@backbase/universal-ang": "^6.6.3",
+    "@ng-bootstrap/ng-bootstrap": "^7.0.0",
+    "@ng-select/ng-select": "^5.0.15",
     "@ngrx/effects": "10.1.2",
     "@ngrx/store": "10.1.2",
     "core-js": "~2.6.5",
