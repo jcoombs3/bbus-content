@@ -10,6 +10,12 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { ExampleWidgetModule } from '@bbus/example-widget';
 
+// Containers
+import { ContainersModule } from '@backbase/universal-ang/containers';
+
+// WA3 Image, Plain Text, Rich Text
+import { ContentWidgetModule } from '@backbase/universal-ang/content';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -25,7 +31,9 @@ import { ExampleWidgetModule } from '@bbus/example-widget';
 			}
 		}),
     RouterModule.forRoot([], { initialNavigation: false, useHash: true }),
-    ExampleWidgetModule
+    ExampleWidgetModule,
+		ContainersModule,
+		ContentWidgetModule
   ],
   providers: [...environment.mockProviders || []],
   bootstrap: [AppComponent]

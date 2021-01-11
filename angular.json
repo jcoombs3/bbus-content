@@ -32,7 +32,7 @@
       },
       "root": "apps/my-example-app-content",
       "sourceRoot": "apps/my-example-app-content/src",
-      "prefix": "bb",
+      "prefix": "bbus",
       "architect": {
         "build": {
           "builder": "@bb-cli/bb-ang:browser",
@@ -139,7 +139,7 @@
     },
     "my-example-app-content-e2e": {
       "projectType": "application",
-      "prefix": "bb",
+      "prefix": "bbus",
       "root": "apps/my-example-app-content-e2e",
       "architect": {
         "e2e": {
@@ -202,10 +202,10 @@
   },
   "cli": {
     "warnings": {
-      "typescriptMismatch": false,
       "versionMismatch": false
     },
-    "defaultCollection": "@bb-cli/schematics"
+    "defaultCollection": "@bb-cli/schematics",
+    "analytics": false
   },
   "defaultProject": "my-example-app-content"
 }

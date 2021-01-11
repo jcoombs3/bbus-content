@@ -1,0 +1,48 @@
+{
+	"extends": "container-bb-manageable-area",
+	"children": [
+		{
+			"extends": "bbus-my-example-app-content-ang",
+			"AppConfig.googleAPIKey": "",
+			"area": "0",
+			"children": [
+				{
+					"classId": "LayoutContainerComponent",
+					"showHeaderSection": false,
+					"navigationType": "horizontal",
+					"children": [
+						{
+							"classId": "PanelContainerComponent",
+							"title": "Branding Area",
+							"children": []
+            },
+						{
+							"classId": "PanelContainerComponent",
+							"title": "Right Topbar Area",
+							"children": [
+              ]
+            },
+						{
+							"classId": "PanelContainerComponent",
+							"title": "Sidebar Area",
+							"children": [
+              ]
+            },
+						{
+							"classId": "PanelContainerComponent",
+							"title": "Header Area",
+							"children": []
+            },
+						{
+							"classId": "PanelContainerComponent",
+							"title": "Main Content Area",
+							"cssClasses": "container d-block",
+							"children": [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+	"$schema": "../node_modules/@backbase/sdlc-convert/node_modules/@backbase/sdlc-schema/experience.schema.json",
+	"name": "bbus-content-app",
+	"title": "BBUS Content App",
+	"properties": {
+		"AccessDeniedPage": "bbus-content-app/login?error=accessdenied",
+		"DefaultLandingPage": "bbus-content-app/index",
+		"ErrorPage": "bbus-content-app/error",
+		"LoginPage": "bbus-content-app/login"
+	},
+	"contentDirs": {
+		"default": "sdlc/content"
+	},
+	"cxSources": [
+    "node_modules/@backbase",
+    "dist/provisioning-packages/cx6/my-example-app-content.zip",
+    "collections/collection-bb-web-sdk-1.15.1.zip"
+  ],
+	"environments": {
+		"default": {
+			"provisioning": {
+				"type": "cx",
+				"outputDir": "./dist/experiences/remote",
+				"forcedIncludes": []
+			}
+		}
+	},
+	"menus": {
+		"master-pages": [
+			{
+				"section": "LeanMasterPage",
+				"title": "LeanMasterPage",
+				"page": {
+					"extends": "page-bb-default",
+					"name": "LeanMasterPage",
+					"title": "Lean Master Page",
+					"innerWrapperClass": "bg-gray-light-300",
+					"faviconPath": "ext-bnp-page-loader/assets",
+					"children": [
+						{
+							"fragment": "sdlc/pages/lean-master-page.json"
+            }
+          ]
+				}
+      }
+    ],
+		"special-pages": [
+			{
+        "section": "login",
+        "title": "Login",
+        "permission": "anonymousConsumer",
+        "page": {
+          "extends": "LeanMasterPage",
+          "title": "Login",
+          "children": []
+        }
+      }
+		],
+		"main": [
+			{
+        "section": "index",
+        "title": "Home",
+        "permission": "anonymousConsumer",
+        "page": {
+          "extends": "LeanMasterPage",
+          "title": "Home",
+          "innerWrapperClass": "",
+          "children": [
+            {
+              "fragment": "sdlc/pages/home.json"
+            }
+          ]
+        }
+      }
+		]
+	}
+}
