@@ -16,7 +16,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-       "@bbus/*": [
+      "@bbus/*": [
         "libs/*/public_api.ts",
         "node_modules/@bbus/*"
       ]

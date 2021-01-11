@@ -8,6 +8,7 @@ import { BackbaseCoreModule } from '@backbase/foundation-ang/core';
 import { environment } from '../environments/environment';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
+import { ExampleWidgetModule } from '@bbus/example-widget';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { EffectsModule } from '@ngrx/effects';
 				THEME_V2: true
 			}
 		}),
-    RouterModule.forRoot([], { initialNavigation: false, useHash: true })
+    RouterModule.forRoot([], { initialNavigation: false, useHash: true }),
+    ExampleWidgetModule
   ],
   providers: [...environment.mockProviders || []],
   bootstrap: [AppComponent]

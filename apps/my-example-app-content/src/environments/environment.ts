@@ -10,7 +10,12 @@ const services: ExternalServices = {};
 const pageModel: Item = {
   name: 'app-container',
   properties: {},
-  children: [],
+  children: [{
+      name: 'example-widget',
+      properties: {
+        classId: 'ExampleWidgetComponent'
+      }
+    }],
 };
 
 export const environment: Environment = {
