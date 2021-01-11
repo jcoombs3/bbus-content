@@ -43,7 +43,16 @@
 									"children": [
 										{
 											"classId": "PanelContainerComponent",
-											"children": []
+											"cssClasses": "d-flex justify-content-center",
+											"children": [
+												{
+													"classId": "ContentWidgetComponent",
+													"content-defaultContent": {
+														"kind": "content",
+														"path": "placeholder.png"
+													}
+												}
+											]
 										},
 										{
 											"classId": "PanelContainerComponent",
