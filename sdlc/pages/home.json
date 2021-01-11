@@ -38,6 +38,32 @@
 							"title": "Main Content Area",
 							"cssClasses": "container d-block",
 							"children": [
+								{
+									"classId": "TabContainerComponent",
+									"children": [
+										{
+											"classId": "PanelContainerComponent",
+											"cssClasses": "d-flex justify-content-center",
+											"children": [
+												{
+													"classId": "ContentWidgetComponent",
+													"content-defaultContent": {
+														"kind": "content",
+														"path": "placeholder.png"
+													}
+												}
+											]
+										},
+										{
+											"classId": "PanelContainerComponent",
+											"children": []
+										},
+										{
+											"classId": "PanelContainerComponent",
+											"children": []
+										}
+									]
+								}
               ]
             }
           ]
