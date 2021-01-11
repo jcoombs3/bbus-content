@@ -205,7 +205,8 @@
       "typescriptMismatch": false,
       "versionMismatch": false
     },
-    "defaultCollection": "@bb-cli/schematics"
+    "defaultCollection": "@bb-cli/schematics",
+    "analytics": false
   },
   "defaultProject": "my-example-app-content"
 }
