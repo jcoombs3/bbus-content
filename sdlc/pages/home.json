@@ -38,6 +38,23 @@
 							"title": "Main Content Area",
 							"cssClasses": "container d-block",
 							"children": [
+								{
+									"classId": "TabContainerComponent",
+									"children": [
+										{
+											"classId": "PanelContainerComponent",
+											"children": []
+										},
+										{
+											"classId": "PanelContainerComponent",
+											"children": []
+										},
+										{
+											"classId": "PanelContainerComponent",
+											"children": []
+										}
+									]
+								}
               ]
             }
           ]
