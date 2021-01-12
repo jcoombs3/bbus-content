@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Rich Text",
+  "description": "Structured Content that models the content of a rich-text content unit.",
+  "type": "object",
+  "properties": {
+    "content": {
+      "title": "Rich text content",
+      "type": "string",
+      "metadata": {
+        "infoText": "",
+        "placeholderText": "",
+        "renderingHint": "richTextEditor"
+      }
+    }
+  },
+  "required": [
+    "content"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Plain Text",
+  "description": "Structured Content that models the content of a plain-text content unit.",
+  "type": "object",
+  "properties": {
+    "content": {
+      "title": "Plain text content",
+      "type": "string",
+      "metadata": {
+        "infoText": "",
+        "placeholderText": ""
+      }
+    }
+  },
+  "required": [
+    "content"
+  ]
+}
