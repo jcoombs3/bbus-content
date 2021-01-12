@@ -1,0 +1,4 @@
+{
+  "$schema": "./$schema/assets/SC_Unit_RichText.json",
+  "content": "<p>This is rich text content.</p>\n"
+}

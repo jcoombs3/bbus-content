@@ -56,11 +56,27 @@
 										},
 										{
 											"classId": "PanelContainerComponent",
-											"children": []
+											"children": [
+												{
+													"classId": "ContentWidgetComponent",
+													"content-defaultContent": {
+														"kind": "content",
+														"path": "Foobar-Plain.json"
+													}
+												}
+											]
 										},
 										{
 											"classId": "PanelContainerComponent",
-											"children": []
+											"children": [
+												{
+													"classId": "ContentWidgetComponent",
+													"content-defaultContent": {
+														"kind": "content",
+														"path": "Foobar-Rich.json"
+													}
+												}
+											]
 										}
 									]
 								}
