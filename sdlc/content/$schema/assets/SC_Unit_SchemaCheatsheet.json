@@ -62,6 +62,39 @@
 			"metadata": {
 				"order": 7
 			}
+		},
+		"number": {
+			"title": "number type",
+			"type": "number",
+			"metadata": {
+				"infoText": "All characters are allowed, but only numbers will validate the form.",
+				"order": 8
+			}
+		},
+		"array": {
+			"title": "array type",
+			"type": "array",
+			"minItems": 1,
+			"metadata": {
+				"order": 9
+			},
+			"items": {
+				"title": "array item",
+				"type": "string"
+			}
+		},
+		"object": {
+			"title": "object type",
+			"type": "object",
+			"metadata": {
+				"order": 10
+			},
+			"properties": {
+				"property": {
+					"title": "an object property",
+					"type": "string"
+				}
+			}
 		}
 	}
 }

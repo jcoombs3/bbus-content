@@ -6,5 +6,12 @@
 	"structuredContent": "rel:Foobar-Article.json",
 	"image": "rel:placeholder.png",
 	"enum": "option three",
-	"boolean": true
+	"boolean": true,
+	"number": 40.999,
+	"array": [
+		"lorem ipsum sit dolor"
+	],
+	"object": {
+		"property": "lorem ipsum sit dolor"
+	}
 }
