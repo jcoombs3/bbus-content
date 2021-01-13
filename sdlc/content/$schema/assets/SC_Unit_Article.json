@@ -1,19 +1,83 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Article",
-  "description": "Structured Content that models the content of an article content unit.",
-  "type": "object",
-  "properties": {
-    "title": {
-      "title": "Title",
-      "type": "string"
-    },
-    "date": {
-      "title": "Date Published",
-      "type": "string"
-    }
-  },
-  "required": [
-    "title"
+	"$schema": "http://json-schema.org/draft-04/schema",
+	"title": "Article",
+	"description": "An article with a title, introduction and sub headings.",
+	"type": "object",
+	"properties": {
+		"title": {
+			"title": "Title",
+			"type": "string",
+			"description": "Title of the article.",
+			"metadata": {
+				"placeholderText": "Enter a title",
+				"order": 1
+			}
+		},
+		"picture": {
+			"title": "Picture",
+			"type": "string",
+			"description": "Picture accompanying the article. Optional.",
+			"metadata": {
+				"renderingHint": "image",
+				"infoText": "Picture accompanying the article (optional)",
+				"order": 2
+			}
+		},
+		"introduction": {
+			"title": "Introduction",
+			"type": "string",
+			"description": "A paragraph introducing the article.",
+			"metadata": {
+				"renderingHint": "multiline",
+				"infoText": "A paragraph introducing the article",
+				"order": 3
+			}
+		},
+		"sections": {
+			"title": "Sections",
+			"type": "array",
+			"minItems": 1,
+			"description": "Sections forming the article. Each section has a sub heading.",
+			"metadata": {
+				"order": 4
+			},
+			"items": {
+				"title": "Section",
+				"type": "object",
+				"description": "One section with a sub heading and paragraphs.",
+				"properties": {
+					"title": {
+						"title": "Title",
+						"type": "string",
+						"description": "A sub heading of a section.",
+						"metadata": {
+							"placeholderText": "Enter a heading"
+						}
+					},
+					"paragraphs": {
+						"title": "Paragraphs",
+						"type": "array",
+						"minItems": 1,
+						"description": "Paragraphs of a section.",
+						"items": {
+							"title": "Paragraph",
+							"type": "string",
+							"description": "A paragraph.",
+							"metadata": {
+								"renderingHint": "multiline",
+								"infoText": "One paragraph"
+							}
+						}
+					}
+				},
+				"required": [
+          "title"
+        ]
+			}
+		}
+	},
+	"required": [
+    "title",
+    "introduction"
   ]
 }
