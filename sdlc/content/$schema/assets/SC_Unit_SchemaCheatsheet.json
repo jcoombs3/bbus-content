@@ -42,6 +42,26 @@
 				"renderingHint": "image",
 				"order": 5
 			}
-    }
+    },
+		"enum": {
+			"title": "enum type",
+			"enum": [
+				"option one",
+				"option two",
+				"option three",
+				"option four"
+			],
+			"default": "option one",
+			"metadata": {
+				"order": 6
+			}
+		},
+		"boolean": {
+      "title": "boolean type",
+      "type": "boolean",
+			"metadata": {
+				"order": 7
+			}
+		}
   }
 }

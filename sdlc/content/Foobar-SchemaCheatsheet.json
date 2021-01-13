@@ -4,5 +4,7 @@
 	"multiline": "a multiline paragraph",
 	"richTextEditor": "<p>a rich text paragraph</p>\n",
 	"structuredContent": "rel:Foobar-Article.json",
-	"image": "rel:placeholder.png"
+	"image": "rel:placeholder.png",
+	"enum": "option three",
+	"boolean": true
 }
