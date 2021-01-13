@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Schema Cheatsheet",
+  "description": "Structured Content that displays all possible schema data types and rendering hints.",
+  "type": "object",
+  "properties": {
+    "string": {
+      "title": "string type",
+      "type": "string",
+			"metadata": {
+				"order": 1
+			}
+    },
+    "multiline": {
+      "title": "multiline type",
+      "type": "string",
+			"metadata": {
+				"renderingHint": "multiline",
+				"order": 2
+			}
+    },
+    "image": {
+      "title": "image type",
+      "type": "string",
+			"metadata": {
+				"renderingHint": "image",
+				"order": 3
+			}
+    }
+  }
+}

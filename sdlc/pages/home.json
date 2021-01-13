@@ -89,6 +89,18 @@
 													}
 												}
 											]
+										},
+										{
+											"classId": "PanelContainerComponent",
+											"children": [
+												{
+													"classId": "ContentWidgetComponent",
+													"content-defaultContent": {
+														"kind": "content",
+														"path": "Foobar-SchemaCheatsheet.json"
+													}
+												}
+											]
 										}
 									]
 								}

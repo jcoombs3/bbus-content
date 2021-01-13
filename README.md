@@ -20,3 +20,6 @@ https://community.backbase.com/documentation/experience_extend_build/6.2.10/deve
 
 ## universal-ang -- content-widget-ang
 supports 1 image, rich text or plain text
+
+## schema types
+https://community.backbase.com/documentation/experience_extend_build/6-2-10/developing_structured_content_types#json_schema_data_type

@@ -1,0 +1,6 @@
+{
+	"$schema": "./$schema/assets/SC_Unit_SchemaCheatSheet.json",
+	"string": "a string",
+	"multiline": "a multiline paragraph",
+	"image": "rel:placeholder.png"
+}
