@@ -1,0 +1,100 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Schema Cheatsheet",
+	"description": "Structured Content that displays all possible schema data types and rendering hints.",
+	"type": "object",
+	"properties": {
+		"string": {
+			"title": "string type",
+			"type": "string",
+			"metadata": {
+				"order": 1
+			}
+		},
+		"multiline": {
+			"title": "multiline type",
+			"type": "string",
+			"metadata": {
+				"renderingHint": "multiline",
+				"order": 2
+			}
+		},
+		"richTextEditor": {
+			"title": "richTextEditor type",
+			"type": "string",
+			"metadata": {
+				"renderingHint": "richTextEditor",
+				"order": 3
+			}
+		},
+		"structuredContent": {
+			"title": "structuredContent type",
+			"type": "string",
+			"metadata": {
+				"renderingHint": "structuredContent",
+				"order": 4
+			}
+		},
+		"image": {
+			"title": "image type",
+			"type": "string",
+			"metadata": {
+				"renderingHint": "image",
+				"order": 5
+			}
+		},
+		"enum": {
+			"title": "enum type",
+			"enum": [
+				"option one",
+				"option two",
+				"option three",
+				"option four"
+			],
+			"default": "option one",
+			"metadata": {
+				"order": 6
+			}
+		},
+		"boolean": {
+			"title": "boolean type",
+			"type": "boolean",
+			"metadata": {
+				"order": 7
+			}
+		},
+		"number": {
+			"title": "number type",
+			"type": "number",
+			"metadata": {
+				"infoText": "All characters are allowed, but only numbers will validate the form.",
+				"order": 8
+			}
+		},
+		"array": {
+			"title": "array type",
+			"type": "array",
+			"minItems": 1,
+			"metadata": {
+				"order": 9
+			},
+			"items": {
+				"title": "array item",
+				"type": "string"
+			}
+		},
+		"object": {
+			"title": "object type",
+			"type": "object",
+			"metadata": {
+				"order": 10
+			},
+			"properties": {
+				"property": {
+					"title": "an object property",
+					"type": "string"
+				}
+			}
+		}
+	}
+}

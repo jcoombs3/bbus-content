@@ -1,0 +1,17 @@
+{
+	"$schema": "./$schema/assets/SC_Unit_SchemaCheatSheet.json",
+	"string": "a string",
+	"multiline": "a multiline paragraph",
+	"richTextEditor": "<p>a rich text paragraph</p>\n",
+	"structuredContent": "rel:Foobar-Article.json",
+	"image": "rel:placeholder.png",
+	"enum": "option three",
+	"boolean": true,
+	"number": 40.999,
+	"array": [
+		"lorem ipsum sit dolor"
+	],
+	"object": {
+		"property": "lorem ipsum sit dolor"
+	}
+}
