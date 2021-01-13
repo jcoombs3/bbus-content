@@ -14,6 +14,8 @@
     "package:libs": "bb-ang package-libs",
     "prestart": "bb-ang copy-assets",
     "start": "ng serve",
+    "prestart:aymme": "bb-ang copy-assets",
+    "start:aymme": "ng serve --configuration=aymme",
     "test": "ng test",
     "update": "ng update @bb-cli/schematics@^4 @backbase/foundation-ang@^6",
     "precreate-experience": "mkdir -p ./dist/experiences/remote",
