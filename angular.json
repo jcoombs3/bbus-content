@@ -88,6 +88,14 @@
                   "with": "apps/my-example-app-content/src/environments/environment.shared.ts"
                 }
               ]
+            },
+            "aymme": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/my-example-app-content/src/environments/environment.ts",
+                  "with": "apps/my-example-app-content/src/environments/environment.aymme.ts"
+                }
+              ]
             }
           }
         },
@@ -99,6 +107,10 @@
           "configurations": {
             "production": {
               "browserTarget": "my-example-app-content:build:production"
+            },
+            "aymme": {
+              "proxyConfig": "proxy.conf.aymme.js",
+              "browserTarget": "my-example-app-content:build:aymme"
             }
           }
         },
