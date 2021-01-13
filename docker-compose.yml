@@ -1,0 +1,24 @@
+version: '3.7'
+services:
+  aymme-fe:
+    image: 'amineatallah/aymme-fe:v0.10.1'
+    ports:
+      - 4201:80
+      - 3003:3003
+    links:
+      - aymme-be
+  aymme-be:
+    image: 'amineatallah/aymme-be:v0.10.1'
+    links:
+      - mongo
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 37018:37018
+    volumes:
+      - mongodb:/data/db
+      - mongo-config:/data/configdb
+volumes:
+  mongodb:
+  mongo-config:
