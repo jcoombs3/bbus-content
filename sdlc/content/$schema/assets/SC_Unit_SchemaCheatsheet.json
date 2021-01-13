@@ -19,12 +19,28 @@
 				"order": 2
 			}
     },
+    "richTextEditor": {
+      "title": "richTextEditor type",
+      "type": "string",
+			"metadata": {
+				"renderingHint": "richTextEditor",
+				"order": 3
+			}
+    },
+		"structuredContent": {
+      "title": "structuredContent type",
+      "type": "string",
+			"metadata": {
+				"renderingHint": "structuredContent",
+				"order": 4
+			}
+		},
     "image": {
       "title": "image type",
       "type": "string",
 			"metadata": {
 				"renderingHint": "image",
-				"order": 3
+				"order": 5
 			}
     }
   }
