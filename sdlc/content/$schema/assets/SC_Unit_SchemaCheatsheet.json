@@ -1,48 +1,48 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Schema Cheatsheet",
-  "description": "Structured Content that displays all possible schema data types and rendering hints.",
-  "type": "object",
-  "properties": {
-    "string": {
-      "title": "string type",
-      "type": "string",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Schema Cheatsheet",
+	"description": "Structured Content that displays all possible schema data types and rendering hints.",
+	"type": "object",
+	"properties": {
+		"string": {
+			"title": "string type",
+			"type": "string",
 			"metadata": {
 				"order": 1
 			}
-    },
-    "multiline": {
-      "title": "multiline type",
-      "type": "string",
+		},
+		"multiline": {
+			"title": "multiline type",
+			"type": "string",
 			"metadata": {
 				"renderingHint": "multiline",
 				"order": 2
 			}
-    },
-    "richTextEditor": {
-      "title": "richTextEditor type",
-      "type": "string",
+		},
+		"richTextEditor": {
+			"title": "richTextEditor type",
+			"type": "string",
 			"metadata": {
 				"renderingHint": "richTextEditor",
 				"order": 3
 			}
-    },
+		},
 		"structuredContent": {
-      "title": "structuredContent type",
-      "type": "string",
+			"title": "structuredContent type",
+			"type": "string",
 			"metadata": {
 				"renderingHint": "structuredContent",
 				"order": 4
 			}
 		},
-    "image": {
-      "title": "image type",
-      "type": "string",
+		"image": {
+			"title": "image type",
+			"type": "string",
 			"metadata": {
 				"renderingHint": "image",
 				"order": 5
 			}
-    },
+		},
 		"enum": {
 			"title": "enum type",
 			"enum": [
@@ -57,11 +57,11 @@
 			}
 		},
 		"boolean": {
-      "title": "boolean type",
-      "type": "boolean",
+			"title": "boolean type",
+			"type": "boolean",
 			"metadata": {
 				"order": 7
 			}
 		}
-  }
+	}
 }
