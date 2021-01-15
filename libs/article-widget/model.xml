@@ -21,6 +21,9 @@
       <property name="label">
         <value>Angular ArticleWidget Widget</value>
       </property>
+			<property name="content-articleContent" label="Content" viewHint="role=manager,input=content-ref:sc_unit_article,designModeOnly" type="contentRef">
+				<value></value>
+			</property>
     </properties>
   </widget>
 </catalog>
