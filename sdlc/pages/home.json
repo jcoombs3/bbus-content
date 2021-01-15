@@ -85,7 +85,7 @@
 													"classId": "ContentWidgetComponent",
 													"content-defaultContent": {
 														"kind": "content",
-														"path": "Foobar-Article.json"
+														"path": "Foobar-SchemaCheatsheet.json"
 													}
 												}
 											]
@@ -94,10 +94,10 @@
 											"classId": "PanelContainerComponent",
 											"children": [
 												{
-													"classId": "ContentWidgetComponent",
-													"content-defaultContent": {
+													"classId": "ArticleWidgetComponent",
+													"content-articleContent": {
 														"kind": "content",
-														"path": "Foobar-SchemaCheatsheet.json"
+														"path": "Foobar-Article.json"
 													}
 												}
 											]
