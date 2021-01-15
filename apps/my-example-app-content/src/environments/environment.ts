@@ -11,6 +11,11 @@ const pageModel: Item = {
   name: 'app-container',
   properties: {},
   children: [{
+      name: 'article-widget-custom',
+      properties: {
+        classId: 'ArticleWidgetCustomComponent'
+      }
+    }, {
       name: 'example-widget',
       properties: {
         classId: 'ExampleWidgetComponent'

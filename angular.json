@@ -177,40 +177,6 @@
         }
       }
     },
-    "example-widget": {
-      "root": "libs/example-widget",
-      "sourceRoot": "libs/example-widget/src",
-      "projectType": "library",
-      "prefix": "bb",
-      "architect": {
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "libs/example-widget/test.ts",
-            "karmaConfig": "./karma.conf.js",
-            "polyfills": "apps/my-example-app-content/src/polyfills.ts",
-            "tsConfig": "./tsconfig.spec.json",
-            "environment": "dev",
-            "codeCoverage": true,
-            "codeCoverageExclude": [
-              "test.ts",
-              "**/polyfills.ts"
-            ]
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "files": [
-              "libs/example-widget/**/*.ts"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
     "article-widget": {
       "root": "libs/article-widget",
       "sourceRoot": "libs/article-widget/src",
@@ -305,6 +271,40 @@
           "options": {
             "files": [
               "libs/portal-content/**/*.ts"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "article-widget-custom": {
+      "root": "libs/article-widget-custom",
+      "sourceRoot": "libs/article-widget-custom/src",
+      "projectType": "library",
+      "prefix": "bbus",
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/article-widget-custom/test.ts",
+            "karmaConfig": "./karma.conf.js",
+            "polyfills": "apps/my-example-app-content/src/polyfills.ts",
+            "tsConfig": "./tsconfig.spec.json",
+            "environment": "dev",
+            "codeCoverage": true,
+            "codeCoverageExclude": [
+              "test.ts",
+              "**/polyfills.ts"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "files": [
+              "libs/article-widget-custom/**/*.ts"
             ],
             "exclude": [
               "**/node_modules/**"

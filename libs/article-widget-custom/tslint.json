@@ -7,15 +7,11 @@
       {"@angular/platform-browser": ["BrowserModule"]},
       {"@angular/platform-browser/animations": ["BrowserAnimationsModule"]},
       {"@angular/common/http": ["HttpClientModule"]}
-    ]
-  ,    "no-implicit-dependencies": {
+    ],
+    "no-implicit-dependencies": {
       "severity": "warning",
       "options": true
     }
-},
-    "linterOptions": {
-      "exclude": [
-        "test.ts"
-      ]
-    }
+  },
+  "linterOptions": {"exclude": ["test.ts"]}
 }

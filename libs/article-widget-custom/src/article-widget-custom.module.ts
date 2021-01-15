@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BackbaseCoreModule } from '@backbase/foundation-ang/core';
-import { ExampleWidgetComponent } from './example-widget.component';
+import { ArticleWidgetCustomComponent } from './article-widget-custom.component';
 
 @NgModule({
-  declarations: [ExampleWidgetComponent],
+  declarations: [ArticleWidgetCustomComponent],
   imports: [
     CommonModule,
     BackbaseCoreModule.withConfig({
-      classMap: { ExampleWidgetComponent }
+      classMap: { ArticleWidgetCustomComponent }
     })
   ]
 })
-export class ExampleWidgetModule { }
+export class ArticleWidgetCustomModule { }

@@ -97,6 +97,20 @@
 													}
 												}
 											]
+										},
+										{
+											"title": "Custom Article StruturedContent",
+											"route": "article-custom",
+											"classId": "PanelContainerComponent",
+											"children": [
+												{
+													"classId": "ArticleWidgetCustomComponent",
+													"content-articleContent": {
+														"kind": "content",
+														"path": "Foobar-Article.json"
+													}
+												}
+											]
 										}
 									]
 								}

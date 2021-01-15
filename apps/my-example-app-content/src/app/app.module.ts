@@ -8,7 +8,6 @@ import { BackbaseCoreModule } from '@backbase/foundation-ang/core';
 import { environment } from '../environments/environment';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { ExampleWidgetModule } from '@bbus/example-widget';
 
 // Data Modules
 import { PortalContentDataModule } from "@bbus/portal-content-data";
@@ -22,6 +21,7 @@ import { ContentWidgetModule } from '@backbase/universal-ang/content';
 
 // Custom Structured Content
 import { ArticleWidgetModule } from '@bbus/article-widget';
+import { ArticleWidgetCustomModule } from '@bbus/article-widget-custom';
 
 @NgModule({
   declarations: [
@@ -39,11 +39,11 @@ import { ArticleWidgetModule } from '@bbus/article-widget';
 		}),
     RouterModule.forRoot([], { initialNavigation: false, useHash: true }),
 		PortalContentDataModule,
-    ExampleWidgetModule,
 		ContainersModule,
 		LayoutContainerModule,
 		ContentWidgetModule,
-		ArticleWidgetModule
+		ArticleWidgetModule,
+		ArticleWidgetCustomModule
   ],
   providers: [...environment.mockProviders || []],
   bootstrap: [AppComponent]
