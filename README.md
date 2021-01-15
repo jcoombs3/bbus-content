@@ -1,4 +1,4 @@
-# Backbase WA3 Project
+# BBUS Content App Workshop
 
 ## Prerequisites
 
@@ -18,17 +18,20 @@ docker-compose up
 2. Open AYMME at port 4201
 3. Go to Experiences tab and add this experience config
 ![AYMME experience config](aymme-config.png?raw=true "AYMME experience config")
+4. Sync Model 
+5. Choose 'Home' as your Page, and then press 'Update & Use Model'
 
-### 1. Prerequisites: Understanding Retail Banking App
+### 2. Project setup
+1. At the root, run the following command
+```
+npm install
+```
+2. Run the project with a configuration to aymme
+```
+npm run start:aymme
+```
 
-# Prerequites
-https://community.backbase.com/documentation/Retail-Banking/latest/setup_widget_development_environment
-https://community.backbase.com/documentation/Design-System/3-8-1/install_theme?bb=1#install_theme
-
-# Take latest package dependencies from Retail Banking App 
-https://community.backbase.com/documentation/Retail-Apps/latest/install_web_app
-
-# Structured Content
+## Structured Content
 https://community.backbase.com/documentation/experience_extend_build/6.2.10/developing_structured_content_types
 
 ## content-ang // bb-content component
