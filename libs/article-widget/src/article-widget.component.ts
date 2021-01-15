@@ -1,34 +1,28 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { ItemModel } from '@backbase/foundation-ang/core';
-import {
-  PORTAL_CONTENT,
-  PortalContent,
-  StructuredContentItem,
-  ImageContentItem
-} from '@backbase/foundation-ang/web-sdk';
 import { Observable } from 'rxjs';
 import { switchMap, map } from 'rxjs/operators';
+import { PortalContentService } from '@bbus/portal-content';
 
 @Component({
   selector: 'bbus-article-widget',
-  templateUrl: './article-widget.component.html'
+  templateUrl: './article-widget.component.html',
+  providers: [PortalContentService]
 })
-export class ArticleWidgetComponent implements OnInit {
-  public $content: Observable<StructuredContentItem> = this.model
+export class ArticleWidgetComponent {
+  public $content = this.model
     .property('content-articleContent', '')
     .pipe(
-      switchMap((contentRef: string) => this.contentService.get(contentRef)),
-      map(
-        (contentItem: StructuredContentItem | ImageContentItem) =>
-          <StructuredContentItem>contentItem
+      switchMap((contentRef: string) =>
+        this.contentService.getContentByQuery(contentRef)
       ),
-			map((structuredContentItem: StructuredContentItem) => structuredContentItem.content)
+      map((content: any) =>
+        this.contentService.updateImageUrls(content, ['picture'])
+      )
     );
 
   constructor(
     private readonly model: ItemModel,
-    @Inject(PORTAL_CONTENT) private readonly contentService: PortalContent
+    private readonly contentService: PortalContentService
   ) {}
-
-  ngOnInit(): void {}
 }

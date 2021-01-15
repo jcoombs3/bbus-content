@@ -1,0 +1,9 @@
+{
+	"title": "An Article Title",
+	"picture": "rel:ace74d4a-274d-4a45-8cda-5ce9db4c9732",
+	"introduction": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+	"sections": [{
+		"title": "A Section Title",
+		"paragraphs": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."]
+	}]
+}

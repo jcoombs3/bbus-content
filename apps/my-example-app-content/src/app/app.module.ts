@@ -10,12 +10,17 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { ExampleWidgetModule } from '@bbus/example-widget';
 
+// Data Modules
+import { PortalContentDataModule } from "@bbus/portal-content-data";
+
 // Containers
 import { ContainersModule } from '@backbase/universal-ang/containers';
 import { LayoutContainerModule } from '@backbase/universal-ang/layouts';
 
 // WA3 Image, Plain Text, Rich Text
 import { ContentWidgetModule } from '@backbase/universal-ang/content';
+
+// Custom Structured Content
 import { ArticleWidgetModule } from '@bbus/article-widget';
 
 @NgModule({
@@ -33,6 +38,7 @@ import { ArticleWidgetModule } from '@bbus/article-widget';
 			}
 		}),
     RouterModule.forRoot([], { initialNavigation: false, useHash: true }),
+		PortalContentDataModule,
     ExampleWidgetModule,
 		ContainersModule,
 		LayoutContainerModule,
