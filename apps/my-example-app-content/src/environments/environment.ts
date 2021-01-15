@@ -11,6 +11,16 @@ const pageModel: Item = {
   name: 'app-container',
   properties: {},
   children: [{
+      name: 'banners-widget',
+      properties: {
+        classId: 'BannersWidgetComponent'
+      }
+    }, {
+      name: 'banner-widget',
+      properties: {
+        classId: 'BannerWidgetComponent'
+      }
+    }, {
       name: 'article-widget-custom',
       properties: {
         classId: 'ArticleWidgetCustomComponent'

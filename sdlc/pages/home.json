@@ -31,7 +31,15 @@
 						{
 							"classId": "PanelContainerComponent",
 							"title": "Header Area",
-							"children": []
+							"children": [
+								{
+									"classId": "ContentWidgetComponent",
+									"content-defaultContent": {
+										"kind": "content",
+										"path": "Foobar-Banner.json"
+									}
+								}
+							]
             },
 						{
 							"classId": "PanelContainerComponent",

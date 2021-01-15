@@ -1,0 +1,58 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema",
+	"title": "Banners",
+	"description": "A list of banners.",
+	"type": "object",
+  "properties": {
+		"banners": {
+			"title": "Banners",
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"title": "Banner",
+				"type": "object",
+				"description": "One banner with a heading, paragraph and optional link.",
+				"properties": {
+					"heading": {
+						"title": "Banner Heading",
+						"type": "string",
+						"description": "A heading of a banner.",
+						"metadata": {
+							"placeholderText": "Enter a heading"
+						}
+					},
+					"description": {
+						"title": "Banner Description",
+						"type": "string",
+						"description": "A paragraph.",
+						"metadata": {
+							"renderingHint": "multiline",
+							"infoText": "One paragraph"
+						}
+					},
+					"link": {
+						"title": "Banner link",
+						"type": "object",
+						"properties": {
+							"text": {
+								"title": "Link text",
+								"type": "string"
+							},
+							"route": {
+								"title": "Link route",
+								"type": "string"
+							}
+						},
+						"metadata": {
+							"infoText": "Optional link"
+						}
+					}
+				},
+				"required": [
+					"heading",
+					"description"
+				]
+			}
+		}
+	}
+}
