@@ -61,8 +61,7 @@ export class PortalContentService {
       // structured content is wrapped in a 'content' key; parse it and return
       map((structuredContentItem: StructuredContentItem) => {
         if (structuredContentItem && structuredContentItem.content) {
-          const parentContent = JSON.parse(structuredContentItem.content);
-          return parentContent.content || undefined;
+          return JSON.parse(structuredContentItem.content);
         } else return undefined;
       })
     );

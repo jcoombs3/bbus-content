@@ -1,5 +1,6 @@
 import { Environment } from './type';
 import { ExternalServices } from '@backbase/foundation-ang/start';
+import { contentItem } from './contentitem';
 
 const services: ExternalServices = {
   auth: () => ({
@@ -56,6 +57,9 @@ const services: ExternalServices = {
     locale: 'en-US'
   }),
   portalContent: () => ({
+		getContent: (contentRef: any) => {
+			return Promise.resolve(contentItem);
+		},
     get: (contentRef: any) => {
       return Promise.resolve({});
     }

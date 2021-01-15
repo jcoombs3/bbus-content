@@ -1,28 +1,16 @@
-import { Component, Inject } from '@angular/core';
-import { ItemModel } from '@backbase/foundation-ang/core';
-import { Observable } from 'rxjs';
-import { switchMap, map } from 'rxjs/operators';
-import { PortalContentService } from '@bbus/portal-content';
+import { Component } from '@angular/core';
+import { ContentService } from '@backbase/universal-ang/content';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'bbus-article-widget',
   templateUrl: './article-widget.component.html',
-  providers: [PortalContentService]
+  providers: [ContentService]
 })
 export class ArticleWidgetComponent {
-  public $content = this.model
-    .property('content-articleContent', '')
-    .pipe(
-      switchMap((contentRef: string) =>
-        this.contentService.getContentByQuery(contentRef)
-      ),
-      map((content: any) =>
-        this.contentService.updateImageUrls(content, ['picture'])
-      )
-    );
+  public article$ = this.contentService
+    .getContent('content-articleContent')
+    .pipe(map((item: any) => item || {}));
 
-  constructor(
-    private readonly model: ItemModel,
-    private readonly contentService: PortalContentService
-  ) {}
+  constructor(private readonly contentService: ContentService) {}
 }

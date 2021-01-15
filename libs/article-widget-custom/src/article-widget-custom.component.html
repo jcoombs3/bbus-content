@@ -6,7 +6,7 @@
 				<p>{{article.introduction}}</p>
 			</div>
 			<div *ngIf="article.picture">
-				<img [src]="article.picture.url" />
+				<img [src]="article.picture.links['content-by-id'].href" />
 			</div>
 		</div>
 		<ng-container *ngIf="article.sections && article.sections.length">
