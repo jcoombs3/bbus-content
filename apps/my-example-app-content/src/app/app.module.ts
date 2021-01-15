@@ -16,6 +16,7 @@ import { LayoutContainerModule } from '@backbase/universal-ang/layouts';
 
 // WA3 Image, Plain Text, Rich Text
 import { ContentWidgetModule } from '@backbase/universal-ang/content';
+import { ArticleWidgetModule } from '@bbus/article-widget';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ContentWidgetModule } from '@backbase/universal-ang/content';
     ExampleWidgetModule,
 		ContainersModule,
 		LayoutContainerModule,
-		ContentWidgetModule
+		ContentWidgetModule,
+		ArticleWidgetModule
   ],
   providers: [...environment.mockProviders || []],
   bootstrap: [AppComponent]
