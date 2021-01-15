@@ -22,7 +22,6 @@ import { ContentWidgetModule } from '@backbase/universal-ang/content';
 
 // Custom Structured Content
 import { ArticleWidgetModule } from '@bbus/article-widget';
-import { PortalContentModule } from '@bbus/portal-content';
 
 @NgModule({
   declarations: [
@@ -44,8 +43,7 @@ import { PortalContentModule } from '@bbus/portal-content';
 		ContainersModule,
 		LayoutContainerModule,
 		ContentWidgetModule,
-		ArticleWidgetModule,
-		PortalContentModule
+		ArticleWidgetModule
   ],
   providers: [...environment.mockProviders || []],
   bootstrap: [AppComponent]

@@ -1,1 +1,1 @@
-export { PortalContentModule } from './src/portal-content.module';
+export * from './src/portal-content.service';
