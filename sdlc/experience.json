@@ -54,6 +54,20 @@
           "title": "Login",
           "children": []
         }
+      },
+			{
+        "section": "cheatsheet",
+        "title": "Cheatsheet",
+        "permission": "anonymousConsumer",
+        "page": {
+          "extends": "LeanMasterPage",
+          "title": "CheatSheet",
+          "children": [
+            {
+              "fragment": "sdlc/pages/cheatsheet.json"
+            }
+					]
+        }
       }
 		],
 		"main": [
