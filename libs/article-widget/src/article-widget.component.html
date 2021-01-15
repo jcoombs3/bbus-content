@@ -1,13 +1,12 @@
 <div style="min-height: 50px;">
 	<ng-container *ngIf="$content | async as content">
-	<div>{{content | json}}</div>
 		<div class="d-flex">
 			<div>
 				<h2>{{content.title}}</h2>
 				<p>{{content.introduction}}</p>
 			</div>
-			<div>
-				image goes here
+			<div *ngIf="content.picture">
+				<img [src]="content.picture.links['content-by-id'].href" />
 			</div>
 		</div>
 		<ng-container *ngIf="content.sections && content.sections.length">
@@ -18,5 +17,9 @@
 				</ng-container>
 			</div>
 		</ng-container>
+
+		<div class="mt-5 pt-5">
+			{{ content | json }}
+		</div>
 	</ng-container>
 </div>

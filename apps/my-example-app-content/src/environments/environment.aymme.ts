@@ -47,9 +47,9 @@ const services: ExternalServices = {
     }
   }),
   pageConfig: () => ({
-    apiRoot: '/gateway/api',
-    staticResourcesRoot: '/gateway/api/portal',
-    portalName: 'bbus-standalone',
+    apiRoot: '/api',
+    staticResourcesRoot: '/api/portal',
+    portalName: 'bbus-content-app',
     pageName: 'index',
     currentLink: '',
     version: '6',
@@ -57,7 +57,6 @@ const services: ExternalServices = {
   }),
   portalContent: () => ({
     get: (contentRef: any) => {
-			console.log('++ contentRef', contentRef);
       return Promise.resolve({});
     }
   })
