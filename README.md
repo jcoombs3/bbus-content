@@ -30,6 +30,9 @@ npm install
 ```
 npm run start:aymme
 ```
+3. Open the project at port 4200; and you are done!
+
+Below are helpful notes along the way to understanding structured content
 
 ## Structured Content
 https://community.backbase.com/documentation/experience_extend_build/6.2.10/developing_structured_content_types
