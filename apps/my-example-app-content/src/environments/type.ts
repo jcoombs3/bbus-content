@@ -9,4 +9,5 @@ export interface Environment {
     readonly pageModel: Item;
     readonly services: ExternalServices;
   };
+  readonly fetchModel?: () => Promise<Response>;
 }
