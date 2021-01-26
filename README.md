@@ -20,6 +20,8 @@ docker-compose up
 ![AYMME experience config](aymme-config.png?raw=true "AYMME experience config")
 4. Sync Model 
 5. Choose 'Home' as your Page, and then press 'Update & Use Model'
+6. Go to Projects tab and add 'bbus-content-app'
+7. Import api-extractor.json into Projects tab
 
 ### 2. Project setup
 1. At the root, run the following command
